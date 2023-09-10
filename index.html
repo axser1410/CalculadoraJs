@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div class="prin">
+            <div class="calculadora">
+                <div class="calculadora-1">
+                    <div id="primera" class="linea ">
+                        <div id="pantalla" class="pantalla">
+                            <span id="aparecer"></span>
+                        </div>
+                        <input type="button" name="numero" id="AC" onclick="AC()">
+                        <label class="boton_numero" for="AC">AC</label>
+                    </div>
+                    <div id="segunda" class="linea segunda">
+                        <input type="button" name="numero" id="borrar" onclick="borrar()">
+                        <label class="boton_numero" for="borrar"><--</label>
+                        
+                        <input type="button" name="numero" id="%" onclick="enviar('%'),mandar(4)">
+                        <label class="boton_numero" for="%">%</label>
+                    </div>
+                    <div id="tercera" class="linea">
+                        <input type="button" name="numero" id="7" onclick="enviar(7)">
+                        <label class="boton_numero" for="7">7</label>
+                        
+                        <input type="button" name="numero" id="8" onclick="enviar(8)">
+                        <label class="boton_numero" for="8">8</label>
+                        
+                        <input type="button" name="numero" id="9" onclick="enviar(9)">
+                        <label class="boton_numero" for="9">9</label>
+                        
+                        <input type="button" name="numero" id="x" onclick="enviar('x'),mandar(3)" >
+                        <label class="boton_numero" for="x">x</label>
+                    </div>
+                    <div id="cuarta" class="linea ">
+                        <input type="button" name="numero" id="4" onclick="enviar(4)">
+                        <label class="boton_numero" for="4">4</label>
+                        
+                        <input type="button" name="numero" id="5" onclick="enviar(5)">
+                        <label class="boton_numero" for="5">5</label>
+                        
+                        <input type="button" name="numero" id="6" onclick="enviar(6)">
+                        <label class="boton_numero" for="6">6</label>
+                        
+                        <input type="button" name="numero" id="-" onclick="enviar('-'),mandar(2)">
+                        <label class="boton_numero" for="-">-</label>
+                    </div>
+                    <div id="quinta" class="linea ">
+                        <input type="button" name="numero" id="1" onclick="enviar(1)">
+                        <label class="boton_numero" for="1">1</label>
+                        
+                        <input type="button" name="numero" id="2" onclick="enviar(2)">
+                        <label class="boton_numero" for="2">2</label>
+                        
+                        <input type="button" name="numero" id="3" onclick="enviar(3)">
+                        <label class="boton_numero" for="3">3</label>
+                        
+                        <input type="button" name="numero" id="+" onclick="enviar('+'),mandar(1)">
+                        <label class="boton_numero" for="+">+</label>
+                    </div>
+                    <div id="sexta" class="linea ">
+                        <input type="button" name="numero" id="," onclick="enviar(',')">
+                        <label class="boton_numero" for=",">,</label>
+                        
+                        <input type="button" name="numero" id="0" onclick="enviar(0)">
+                        <label class="boton_numero" for="0">0</label>
+                        
+                        <input type="button" name="numero" id="pi" onclick="enviar('pi')">
+                        <label class="boton_numero" for="pi">pi</label>
+                        
+                        <input type="button" name="numero" id="=" onclick="resolver()">
+                        <label class="boton_numero" for="=">=</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
